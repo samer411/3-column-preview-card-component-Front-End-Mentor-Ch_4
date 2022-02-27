@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.card {
+  font-family: "Open Sans", sans-serif;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.card .logo {
+  width: 100%;
+  text-align: left;
+}
+.card .text p {
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+.card .text h3 {
+  color: hsl(0, 0%, 95%);
+}
+.card .text p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card:first-of-type {
+  background-color: hsl(31, 77%, 52%);
+}
+.card:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card:nth-of-type(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.card .btn {
+  width: 100%;
+  margin-top: 50px;
+}
+.card .btn button {
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.card:first-of-type.btn button {
+  color: hsl(31, 77%, 52%);
+}
+.card:nth-of-type(2) .btn button {
+  color: hsl(184, 100%, 22%);
+}
+.card:nth-of-type(3) .btn button {
+  color: hsl(179, 100%, 13%);
+}
